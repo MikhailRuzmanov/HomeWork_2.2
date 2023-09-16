@@ -38,11 +38,7 @@ public class Hogwarts {
     public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
-    public static void printStudent(Gryffindor gryffindor){
-        System.out.println("Имя студента: " + gryffindor.getName() + ";" + "\n" +  "Фамилия студента: " + gryffindor.getSurname()
-                + ";" + "\n" +  "Сила магии: " + gryffindor.getMagic() +  ";" + "\n" +  "Расстояние трансгрессии: " + gryffindor.getTransgression()
-                +  ";" + "\n" +  "Благородство: " + gryffindor.getNobility()+  ";" + "\n" +  "Честь: " + gryffindor.getHonor()+  ";" + "\n" +  "Храбрость: " + gryffindor.getBravery() +  ";");
-    }
+
     public static void comparingTwoStudents(Gryffindor harryPotter, Slytherin dracoMalfoy){
         System.out.println(" ");
         System.out.println("-------------------------------------------");

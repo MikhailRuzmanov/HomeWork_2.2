@@ -24,12 +24,13 @@ public class Main {
         System.out.println("======================");
         System.out.println(" ");
 
-        Hogwarts.printStudent(harryPotter);
+        System.out.println(harryPotter.toString());
         Gryffindor.comparisonGryffindorStudents(harryPotter, hermioneGranger);
         Hufflepuff.comparisonHufflepuffStudents(zachariahSmith, cedricDiggory);
         Ravenclaw.comparisonRavenclawStudents(zhouChang, padmaPatil);
         Slytherin.comparisonSlytherinStudents(dracoMalfoy, gregoryGoyle);
         Hogwarts.comparingTwoStudents(harryPotter, dracoMalfoy);
+
 
 
 

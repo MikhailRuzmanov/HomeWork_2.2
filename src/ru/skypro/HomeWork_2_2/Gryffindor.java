@@ -50,5 +50,13 @@ public class Gryffindor  extends Hogwarts{
         }
         System.out.println(" ");
         System.out.println("--------завершили сравнение из Гриффиндора-------------");
+
+
+    }
+    public String toString(){
+        return "Имя студента: " + getName() + ";" + "\n" +  "Фамилия студента: " + getSurname()
+                + ";" + "\n" +  "Сила магии: " + getMagic() +  ";" + "\n" +  "Расстояние трансгрессии: " + getTransgression()
+                +  ";" + "\n" +  "Благородство: " + getNobility()+  ";" + "\n" +  "Честь: " + getHonor()+  ";" + "\n" +  "Храбрость: " + getBravery() +  ";";
+
     }
 }
