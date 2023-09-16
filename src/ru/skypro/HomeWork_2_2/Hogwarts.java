@@ -56,7 +56,7 @@ public class Hogwarts {
             System.out.println(dracoMalfoy.getName() + " " + dracoMalfoy.getSurname()  + " обладает большем расстоянием трансгрессии, чем " + harryPotter.getName() + " " + harryPotter.getSurname() );
         }
         System.out.println(" ");
-        System.out.println("-------- завершили сравнение -------------");
+        System.out.println("-------- завершили сравнение ------------");
 
 
     }

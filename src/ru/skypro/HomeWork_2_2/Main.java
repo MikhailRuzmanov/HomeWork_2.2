@@ -19,9 +19,9 @@ public class Main {
         Slytherin grahamMontague = new Slytherin("Грэхэм", "Монтегю", 12,47,25,36,69,58,47);
         Slytherin gregoryGoyle = new Slytherin("Грегори", "Гойл", 23,56,89, 78,45,12,15);
 
-        System.out.println("======================");
+        System.out.println("=====================");
         System.out.println("Домашняя работа №2.2");
-        System.out.println("======================");
+        System.out.println("=====================");
         System.out.println(" ");
 
         System.out.println(harryPotter.toString());

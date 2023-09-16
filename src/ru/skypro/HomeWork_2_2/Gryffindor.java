@@ -49,7 +49,7 @@ public class Gryffindor  extends Hogwarts{
 
         }
         System.out.println(" ");
-        System.out.println("--------завершили сравнение из Гриффиндора-------------");
+        System.out.println("--------завершили сравнение из Гриффиндора------------");
 
 
     }
