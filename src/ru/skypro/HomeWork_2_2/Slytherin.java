@@ -55,20 +55,13 @@ public class Slytherin extends Hogwarts {
     public void setPower(int power) {
         this.power = power;
     }
-    public static void comparisonSlytherinStudents(Slytherin dracoMalfoy, Slytherin gregoryGoyle){
-        System.out.println(" ");
-        System.out.println("-------------------------------------------");
-        System.out.println("Сравнение двух учеников из факульетета Слизерин");
-        System.out.println(" ");
-        int sumDracoMalfoy = dracoMalfoy.getCunning() + dracoMalfoy.getDetermination() + dracoMalfoy.getAmbition() + dracoMalfoy.getResourcefulness() + dracoMalfoy.getPower();
-        int sumGregoryGoyle = gregoryGoyle.getCunning() + gregoryGoyle.getDetermination() + gregoryGoyle.getAmbition() + gregoryGoyle.getResourcefulness() + gregoryGoyle.getPower();
-        if (sumDracoMalfoy > sumGregoryGoyle) {
-            System.out.println(dracoMalfoy.getName() + " " + " лучший Слизеринец, чем" + " " + gregoryGoyle.getName());
+    public String comparisonSlytherinStudents(Slytherin slytherin){
+
+        if ((cunning + determination + ambition + resourcefulness + power) > (slytherin.getCunning() + slytherin.getDetermination() + slytherin.getAmbition() + slytherin.getResourcefulness() + slytherin.getPower())) {
+            return getName() + " " + " лучший Слизеренец, чем" + " " + slytherin.getName();
         }else{
-            System.out.println(gregoryGoyle.getName() + " " + " лучший Слизеринец, чем" + " " + dracoMalfoy.getName());
+            return slytherin.getName() + " " + " лучший Слизеренецец, чем" + " " + getName();
 
         }
-        System.out.println(" ");
-        System.out.println("--------завершили сравнение из Слизерин-------------");
     }
 }

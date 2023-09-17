@@ -36,20 +36,11 @@ public class Hufflepuff extends Hogwarts {
         this.honesty = honesty;
     }
 
-    public static void comparisonHufflepuffStudents(Hufflepuff zachariahSmith, Hufflepuff cedricDiggory){
-        System.out.println(" ");
-        System.out.println("-------------------------------------------");
-        System.out.println("Сравнение двух учеников из факульетета Пуффендуй");
-        System.out.println(" ");
-        int sumZachariahSmith = zachariahSmith.getIndustriousness() + zachariahSmith.getLoyalty() + zachariahSmith.getHonesty();
-        int sumCedricDiggory = cedricDiggory.getIndustriousness() + cedricDiggory.getLoyalty() + cedricDiggory.getHonesty();
-        if (sumZachariahSmith > sumCedricDiggory) {
-            System.out.println(zachariahSmith.getName() + " " + " лучший Пуффендуец, чем" + " " + cedricDiggory.getName());
-        }else{
-            System.out.println(cedricDiggory.getName() + " " + " лучший Пуффендуец, чем" + " " + zachariahSmith.getName());
+    public String comparisonHufflepuffStudents(Hufflepuff hufflepuff) {
 
-        }
-        System.out.println(" ");
-        System.out.println("--------завершили сравнение из Пуффендуй-------------");
+        return (industriousness + loyalty + honesty) > (hufflepuff.getIndustriousness() + hufflepuff.getLoyalty() + hufflepuff.getHonesty()) ?
+                getName() + " " + " лучший Гриффиндорец, чем" + " " + hufflepuff.getName() :
+                hufflepuff.getName() + " " + " лучший Гриффиндорец, чем" + " " + getName();
+
     }
 }

@@ -45,20 +45,9 @@ public class Ravenclaw extends Hogwarts {
     public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
-    public static void comparisonRavenclawStudents(Ravenclaw zhouChang, Ravenclaw padmaPatil){
-        System.out.println(" ");
-        System.out.println("-------------------------------------------");
-        System.out.println("Сравнение двух учеников из факульетета Когтевран");
-        System.out.println(" ");
-        int sumZhouChang = zhouChang.getIntelligence() + zhouChang.getWisdom() + zhouChang.getWit() + zhouChang.getCreativity();
-        int sumPadmaPatil = padmaPatil.getIntelligence() + padmaPatil.getWisdom() + padmaPatil.getWit() + padmaPatil.getCreativity();
-        if (sumZhouChang > sumPadmaPatil) {
-            System.out.println(zhouChang.getName() + " " + " лучший Когтевранец, чем" + " " + padmaPatil.getName());
-        }else{
-            System.out.println(padmaPatil.getName() + " " + " лучший Когтевранец, чем" + " " + zhouChang.getName());
-
-        }
-        System.out.println(" ");
-        System.out.println("--------завершили сравнение из Когтевран-------------");
+    public String comparisonRavenclawStudents(Ravenclaw ravenclaw){
+        return (intelligence + wisdom + wit+creativity) > (ravenclaw.getIntelligence() + ravenclaw.getWisdom() + ravenclaw.getWit() + ravenclaw.getCreativity()) ?
+                getName() + " " + " лучший Гриффиндорец, чем" + " " + ravenclaw.getName() :
+                ravenclaw.getName() + " " + " лучший Гриффиндорец, чем" + " " + getName();
     }
 }

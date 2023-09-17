@@ -25,11 +25,51 @@ public class Main {
         System.out.println(" ");
 
         System.out.println(harryPotter.toString());
-        Gryffindor.comparisonGryffindorStudents(harryPotter, hermioneGranger);
-        Hufflepuff.comparisonHufflepuffStudents(zachariahSmith, cedricDiggory);
-        Ravenclaw.comparisonRavenclawStudents(zhouChang, padmaPatil);
-        Slytherin.comparisonSlytherinStudents(dracoMalfoy, gregoryGoyle);
-        Hogwarts.comparingTwoStudents(harryPotter, dracoMalfoy);
+
+        System.out.println(" ");
+        System.out.println("-------------------------------------------");
+        System.out.println("Сравнение двух учеников из факульетета Гриффиндор");
+        System.out.println(" ");
+        System.out.println(harryPotter.comparisonGryffindorStudents(hermioneGranger));
+        System.out.println(" ");
+        System.out.println("--------завершили сравнение из Гриффиндора------------");
+
+        System.out.println(" ");
+        System.out.println("-------------------------------------------");
+        System.out.println("Сравнение двух учеников из факульетета Пуффендуй");
+        System.out.println(" ");
+        System.out.println(zachariahSmith.comparisonHufflepuffStudents(cedricDiggory));
+        System.out.println(" ");
+        System.out.println("--------завершили сравнение из Пуффендуй-------------");
+
+        System.out.println(" ");
+        System.out.println("-------------------------------------------");
+        System.out.println("Сравнение двух учеников из факульетета Когтевран");
+        System.out.println(" ");
+        System.out.println(zhouChang.comparisonRavenclawStudents(padmaPatil));
+        System.out.println(" ");
+        System.out.println("--------завершили сравнение из Когтевран-------------");
+
+        System.out.println(" ");
+        System.out.println("-------------------------------------------");
+        System.out.println("Сравнение двух учеников из факульетета Слизерин");
+        System.out.println(" ");
+        System.out.println(dracoMalfoy.comparisonSlytherinStudents(gregoryGoyle));
+        System.out.println(" ");
+        System.out.println("--------завершили сравнение из Слизерин-------------");
+
+        System.out.println(" ");
+        System.out.println("-------------------------------------------");
+        System.out.println("Сравнение двух учеников из разных факульетов по магии и расстоянию трасгресии");
+        System.out.println(" ");
+        System.out.println(harryPotter.comparingTwoStudentsMagic(dracoMalfoy));
+        System.out.println(harryPotter.comparingTwoStudentsTransgression(dracoMalfoy));
+        System.out.println(" ");
+        System.out.println("-------- завершили сравнение ------------");
+
+
+
+        //Hogwarts.comparingTwoStudents(harryPotter, dracoMalfoy);
 
 
 

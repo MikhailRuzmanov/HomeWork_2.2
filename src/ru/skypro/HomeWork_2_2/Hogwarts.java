@@ -1,10 +1,8 @@
 package ru.skypro.HomeWork_2_2;
 
-import java.sql.SQLOutput;
-
 public class Hogwarts {
     private String name;
-    private  String surname;
+    private String surname;
     private int magic;
     private int transgression;
 
@@ -39,25 +37,21 @@ public class Hogwarts {
         this.transgression = transgression;
     }
 
-    public static void comparingTwoStudents(Gryffindor harryPotter, Slytherin dracoMalfoy){
-        System.out.println(" ");
-        System.out.println("-------------------------------------------");
-        System.out.println("Сравнение двух учеников из разных факульетов по магии и расстоянию трасгресии");
-        System.out.println(" ");
+    public String comparingTwoStudentsMagic(Hogwarts hogwarts) {
 
-        if (harryPotter.getMagic() > dracoMalfoy.getMagic()){
-            System.out.println(harryPotter.getName() + " " + harryPotter.getSurname() + " обладает большей мощностью магии, чем " + dracoMalfoy.getName() + " " + dracoMalfoy.getSurname() );
-        }else{
-            System.out.println(dracoMalfoy.getName() + " " + dracoMalfoy.getSurname()  + " обладает большей мощностью магии, чем " + harryPotter.getName() + " " + harryPotter.getSurname() );
+        if (magic > hogwarts.getMagic()) {
+            return name + " " + surname + " обладает большей мощностью магии, чем " + hogwarts.getName() + " " + hogwarts.getSurname();
+        } else {
+            return hogwarts.getName() + " " + hogwarts.getSurname() + " обладает большей мощностью магии, чем " + getName() + " " + getSurname();
         }
-        if (harryPotter.getTransgression() > dracoMalfoy.getTransgression()){
-            System.out.println(harryPotter.getName() + " " + harryPotter.getSurname() + " обладает большем расстоянием трансгрессии, чем " + dracoMalfoy.getName() + " " + dracoMalfoy.getSurname() );
-        }else{
-            System.out.println(dracoMalfoy.getName() + " " + dracoMalfoy.getSurname()  + " обладает большем расстоянием трансгрессии, чем " + harryPotter.getName() + " " + harryPotter.getSurname() );
-        }
-        System.out.println(" ");
-        System.out.println("-------- завершили сравнение ------------");
+    }
 
+    public String comparingTwoStudentsTransgression(Hogwarts hogwarts){
+        if (transgression > hogwarts.getTransgression()) {
+            return name + " " + surname + " обладает большем расстоянием трансгрессии, чем " + hogwarts.getName() + " " + hogwarts.getSurname();
+        } else {
+            return hogwarts.getName() + " " + hogwarts.getSurname() + " обладает большем расстоянием трансгрессии, чем " + name + " " + surname;
+        }
 
     }
 
